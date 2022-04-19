@@ -27,7 +27,7 @@ public class SecurityService {
 		return "mordy";
 	}
 
-	@PreAuthorize("hasPermission(#orga, 'admin')")
+	@PreAuthorize("hasPermission(#orga, 'ADMINISTRATION')")
 	public String dothat2(Organization orga) {
 		return "mordy";
 	}
